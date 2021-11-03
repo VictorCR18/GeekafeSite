@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Cabecalho {
+    font-size: 120%;
+    width: 100%;
+}
+
+#logo {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#Mylabel {
+    color: white;
+}
+
+#card {
+    background: white;
+}
+
+#ConteudoP {
+    width: 100%;
+    height: 100%;
+    background: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.boxall {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.381);
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.cardM {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.381);
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+}
+
+.infor {
+    width: 200px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.prod {
+    font-size: 23px;
+    margin-left: 5px;
+    width: 300px;
+}
+
+.preco {
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+.conj {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.btn-success {
+    margin-bottom: 10px;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+}
+
+.close {
+    background: rgba(255, 0, 0, 0);
+    width: 30px;
+    height: 100%;
+    border-radius: 5px;
+    color: red;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close:hover {
+    background: red;
+    color: rgb(255, 255, 255);
+}
+
+.close>span {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    align-items: center;
+}
+
+.modal.show .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+}
+
+#btD {
+    margin-left: 15px;
+    width: 36px;
+}
+
+@media screen and (max-width: 1100px) {
+    #ConteudoP {
+        flex-direction: column;
+        padding: 1vh 3vw;
+        margin-left: 0%;
+        justify-content: normal;
+    }
+    .img {
+        width: 100%;
+        height: 276px;
+        margin-bottom: 10px;
+    }
+    .card {
+        height: 380px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .cardM {
+        width: 300px;
+        height: 380px;
+    }
+    .infor {
+        width: 170px;
+    }
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        padding: 0!important;
+    }
+    .modal.show {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+    .modal.show .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+}
